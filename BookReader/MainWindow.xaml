@@ -1,0 +1,33 @@
+﻿<Window x:Class="BookReader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:root="clr-namespace:BookReader"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowState="Maximized">
+    <DockPanel Name="mainPanel" LastChildFill="True" Background="DimGray">
+        <Rectangle DockPanel.Dock="Top" Fill="DimGray" Height="{Binding RelativeSource={RelativeSource Self}, Path=Parent.ActualHeight, Converter={x:Static root:App.scaleConverter}, ConverterParameter=0.03}" />
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" Background="LightGray" Height="{Binding RelativeSource={RelativeSource Self}, Path=Parent.ActualHeight, Converter={x:Static root:App.scaleConverter}, ConverterParameter=0.06}">
+            <Grid>
+                <Grid.Width>
+                    <MultiBinding Converter="{x:Static root:App.progressConverter}">
+                        <Binding ElementName="mainPanel" Path="ActualWidth"/>
+                        <Binding ElementName="mainPanel" Path="ActualHeight"/>
+                    </MultiBinding>
+                </Grid.Width>
+                <Border BorderThickness="1" BorderBrush="Gray">
+                    <Rectangle Name="progressBar0" Fill="Gray" Margin="{Binding RelativeSource={RelativeSource Self}, Path=Parent.Parent.Parent.Parent.ActualHeight, Converter={x:Static root:App.thicknessConverter}, ConverterParameter=0.02}" />    
+                </Border>
+                <Border BorderThickness="1" BorderBrush="Gray">
+                    <Rectangle Name="progressBar1" Fill="Black" Width="200" HorizontalAlignment="Left" Margin="{Binding RelativeSource={RelativeSource Self}, Path=Parent.Parent.Parent.Parent.ActualHeight, Converter={x:Static root:App.thicknessConverter}, ConverterParameter=0.02}" />
+                </Border>
+            </Grid>
+            <Button BorderThickness="1" BorderBrush="Gray" Width="{Binding RelativeSource={RelativeSource Self}, Path=Parent.ActualHeight}" Content="◄" />
+            <Button BorderThickness="1" BorderBrush="Gray" Width="{Binding RelativeSource={RelativeSource Self}, Path=Parent.ActualHeight}" Content="►" />
+        </StackPanel>
+        <Rectangle DockPanel.Dock="Bottom" Fill="DimGray" Height="{Binding RelativeSource={RelativeSource Self}, Path=Parent.ActualHeight, Converter={x:Static root:App.scaleConverter}, ConverterParameter=0.03}" />
+        <Rectangle Width="100" Height="50" Fill="RosyBrown" />
+    </DockPanel>
+</Window>
