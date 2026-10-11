@@ -38,9 +38,12 @@ namespace BookReader
 
     public class ProgressConverter : IMultiValueConverter
     {
+        public const double innerScaleCoefficient = 0.02;
+        public const double outerScaleCoefficient = 3 * innerScaleCoefficient;
+
         public object Convert(object[] values, Type targetType, object parameter, CultureInfo culture)
         {
-            return (double)values[0] - 2 * (double)values[1] * 0.06;
+            return (double)values[0] - 2 * (double)values[1] * outerScaleCoefficient;
         }
 
         public object[] ConvertBack(object value, Type[] targetTypes, object parameter, CultureInfo culture)

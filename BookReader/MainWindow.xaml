@@ -9,7 +9,8 @@
         Title="MainWindow" Height="450" Width="800" WindowState="Maximized">
     <DockPanel Name="mainPanel" LastChildFill="True" Background="DimGray">
         <Rectangle DockPanel.Dock="Top" Fill="DimGray" Height="{Binding RelativeSource={RelativeSource Self}, Path=Parent.ActualHeight, Converter={x:Static root:App.scaleConverter}, ConverterParameter=0.03}" />
-        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" Background="LightGray" Height="{Binding RelativeSource={RelativeSource Self}, Path=Parent.ActualHeight, Converter={x:Static root:App.scaleConverter}, ConverterParameter=0.06}">
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" Background="LightGray"
+                    Height="{Binding RelativeSource={RelativeSource Self}, Path=Parent.ActualHeight, Converter={x:Static root:App.scaleConverter}, ConverterParameter={x:Static root:ProgressConverter.outerScaleCoefficient}}">
             <Grid>
                 <Grid.Width>
                     <MultiBinding Converter="{x:Static root:App.progressConverter}">
@@ -18,16 +19,50 @@
                     </MultiBinding>
                 </Grid.Width>
                 <Border BorderThickness="1" BorderBrush="Gray">
-                    <Rectangle Name="progressBar0" Fill="Gray" Margin="{Binding RelativeSource={RelativeSource Self}, Path=Parent.Parent.Parent.Parent.ActualHeight, Converter={x:Static root:App.thicknessConverter}, ConverterParameter=0.02}" />    
+                    <Rectangle Name="progressBar0" Fill="Gray"
+                               Margin="{Binding RelativeSource={RelativeSource Self}, Path=Parent.Parent.Parent.Parent.ActualHeight, Converter={x:Static root:App.thicknessConverter}, ConverterParameter={x:Static root:ProgressConverter.innerScaleCoefficient}}" />
                 </Border>
                 <Border BorderThickness="1" BorderBrush="Gray">
-                    <Rectangle Name="progressBar1" Fill="Black" Width="200" HorizontalAlignment="Left" Margin="{Binding RelativeSource={RelativeSource Self}, Path=Parent.Parent.Parent.Parent.ActualHeight, Converter={x:Static root:App.thicknessConverter}, ConverterParameter=0.02}" />
+                    <Rectangle Name="progressBar1" Fill="Black" Width="200" HorizontalAlignment="Left"
+                               Margin="{Binding RelativeSource={RelativeSource Self}, Path=Parent.Parent.Parent.Parent.ActualHeight, Converter={x:Static root:App.thicknessConverter}, ConverterParameter={x:Static root:ProgressConverter.innerScaleCoefficient}}" />
                 </Border>
             </Grid>
-            <Button BorderThickness="1" BorderBrush="Gray" Width="{Binding RelativeSource={RelativeSource Self}, Path=Parent.ActualHeight}" Content="◄" />
-            <Button BorderThickness="1" BorderBrush="Gray" Width="{Binding RelativeSource={RelativeSource Self}, Path=Parent.ActualHeight}" Content="►" />
+            <Button BorderThickness="1" BorderBrush="Gray"
+                    Width="{Binding RelativeSource={RelativeSource Self}, Path=Parent.ActualHeight}" Height="{Binding RelativeSource={RelativeSource Self}, Path=Parent.ActualHeight}">
+                <Border Background="Transparent"
+                        Height="{Binding RelativeSource={RelativeSource Self}, Path=Parent.ActualHeight, Converter={x:Static root:App.scaleConverter}, ConverterParameter=0.6}"
+                        Width="{Binding RelativeSource={RelativeSource Self}, Path=ActualHeight, Converter={x:Static root:App.scaleConverter}, ConverterParameter=0.5}">
+                    <Rectangle Fill="Black" VerticalAlignment="Center"
+                               Width="{Binding RelativeSource={RelativeSource Self}, Path=Parent.ActualHeight}"
+                               Height="{Binding RelativeSource={RelativeSource Self}, Path=Parent.ActualHeight}" >
+                        <Rectangle.LayoutTransform>
+                            <RotateTransform Angle="45" />
+                        </Rectangle.LayoutTransform>
+                    </Rectangle>
+                </Border>
+            </Button>
+            <Button BorderThickness="1" BorderBrush="Gray"
+                    Width="{Binding RelativeSource={RelativeSource Self}, Path=Parent.ActualHeight}"
+                    Height="{Binding RelativeSource={RelativeSource Self}, Path=Parent.ActualHeight}">
+                <Border Background="Transparent" RenderTransformOrigin="0.5,0.5"
+                        Height="{Binding RelativeSource={RelativeSource Self}, Path=Parent.ActualHeight, Converter={x:Static root:App.scaleConverter}, ConverterParameter=0.6}"
+                        Width="{Binding RelativeSource={RelativeSource Self}, Path=ActualHeight, Converter={x:Static root:App.scaleConverter}, ConverterParameter=0.5}">
+                    <Border.RenderTransform>
+                        <ScaleTransform ScaleX="-1" />
+                    </Border.RenderTransform>
+                    <Rectangle Fill="Black" VerticalAlignment="Center"
+                               Width="{Binding RelativeSource={RelativeSource Self}, Path=Parent.ActualHeight}"
+                               Height="{Binding RelativeSource={RelativeSource Self}, Path=Parent.ActualHeight}" >
+                        <Rectangle.LayoutTransform>
+                            <RotateTransform Angle="45" />
+                        </Rectangle.LayoutTransform>
+                    </Rectangle>
+                </Border>
+            </Button>
         </StackPanel>
-        <Rectangle DockPanel.Dock="Bottom" Fill="DimGray" Height="{Binding RelativeSource={RelativeSource Self}, Path=Parent.ActualHeight, Converter={x:Static root:App.scaleConverter}, ConverterParameter=0.03}" />
-        <Rectangle Width="100" Height="50" Fill="RosyBrown" />
+        <Rectangle DockPanel.Dock="Bottom" Fill="DimGray"
+                   Height="{Binding RelativeSource={RelativeSource Self}, Path=Parent.ActualHeight, Converter={x:Static root:App.scaleConverter}, ConverterParameter=0.03}" />
+        <Border Background="Beige"
+                Width="{Binding RelativeSource={RelativeSource Self}, Path=ActualHeight, Converter={x:Static root:App.scaleConverter}, ConverterParameter=0.71}" />
     </DockPanel>
 </Window>
