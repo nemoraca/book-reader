@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\source\\repos\\BookReader\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F2FA7623-C130-4A98-BA10-F98F428585D1}|BookReader\\BookReader.csproj|c:\\users\\administrator\\source\\repos\\bookreader\\bookreader\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{F2FA7623-C130-4A98-BA10-F98F428585D1}|BookReader\\BookReader.csproj|c:\\users\\administrator\\source\\repos\\bookreader\\bookreader\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2FA7623-C130-4A98-BA10-F98F428585D1}|BookReader\\BookReader.csproj|solutionrelative:bookreader\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2FA7623-C130-4A98-BA10-F98F428585D1}|BookReader\\BookReader.csproj|C:\\Users\\Administrator\\source\\repos\\BookReader\\bookreader\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{F2FA7623-C130-4A98-BA10-F98F428585D1}|BookReader\\BookReader.csproj|solutionrelative:bookreader\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
@@ -11,8 +15,11 @@
       "RelativeMoniker": "D:0:0:{F2FA7623-C130-4A98-BA10-F98F428585D1}|BookReader\\BookReader.csproj|solutionrelative:bookreader\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2FA7623-C130-4A98-BA10-F98F428585D1}|BookReader\\BookReader.csproj|C:\\Users\\Administrator\\source\\repos\\BookReader\\bookreader\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2FA7623-C130-4A98-BA10-F98F428585D1}|BookReader\\BookReader.csproj|solutionrelative:bookreader\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F2FA7623-C130-4A98-BA10-F98F428585D1}|BookReader\\BookReader.csproj|C:\\Users\\Administrator\\source\\repos\\BookReader\\bookreader\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F2FA7623-C130-4A98-BA10-F98F428585D1}|BookReader\\BookReader.csproj|solutionrelative:bookreader\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|BookReader||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +29,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\BookReader\\BookReader\\App.xaml.cs",
+              "RelativeDocumentMoniker": "BookReader\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\BookReader\\BookReader\\App.xaml.cs",
+              "RelativeToolTip": "BookReader\\App.xaml.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAQwHQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T09:13:58.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\BookReader\\BookReader\\MainWindow.xaml",
               "RelativeDocumentMoniker": "BookReader\\MainWindow.xaml",
@@ -38,28 +62,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\BookReader\\BookReader\\App.xaml.cs",
-              "RelativeDocumentMoniker": "BookReader\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\BookReader\\BookReader\\App.xaml.cs",
-              "RelativeToolTip": "BookReader\\App.xaml.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwCkAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-08T09:13:58.112Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\BookReader\\BookReader\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "BookReader\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Administrator\\source\\repos\\BookReader\\BookReader\\MainWindow.xaml.cs",
               "RelativeToolTip": "BookReader\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-07T20:19:22.231Z"
+              "WhenOpened": "2026-10-07T20:19:22.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\BookReader\\BookReader\\App.xaml",
+              "RelativeDocumentMoniker": "BookReader\\App.xaml",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\BookReader\\BookReader\\App.xaml",
+              "RelativeToolTip": "BookReader\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-20T07:24:18.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookReader",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\BookReader\\BookReader\\BookReader.csproj",
+              "RelativeDocumentMoniker": "BookReader\\BookReader.csproj",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\BookReader\\BookReader\\BookReader.csproj",
+              "RelativeToolTip": "BookReader\\BookReader.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-20T05:01:42.959Z"
             }
           ]
         },

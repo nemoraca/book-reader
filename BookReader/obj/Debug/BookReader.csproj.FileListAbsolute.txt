@@ -14,3 +14,4 @@ C:\Users\Administrator\source\repos\BookReader\BookReader\obj\Debug\BookReader.c
 C:\Users\Administrator\source\repos\BookReader\BookReader\obj\Debug\BookReader.exe
 C:\Users\Administrator\source\repos\BookReader\BookReader\obj\Debug\BookReader.pdb
 C:\Users\Administrator\source\repos\BookReader\BookReader\obj\Debug\BookReader.exe.config
+C:\Users\Administrator\source\repos\BookReader\BookReader\obj\Debug\App.baml

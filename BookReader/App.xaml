@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:BookReader"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <BitmapImage x:Key="Transparent" UriSource="Transparent.png" />
     </Application.Resources>
 </Application>
